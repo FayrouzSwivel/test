@@ -111,7 +111,7 @@ class CustomTextFormField extends StatelessWidget {
     switch (fontStyle) {
       default:
         return TextStyle(
-          color: ColorConstant.gray600,
+          color: appTheme.gray600,
           fontSize: getFontSize(
             14,
           ),
@@ -140,7 +140,7 @@ class CustomTextFormField extends StatelessWidget {
         return OutlineInputBorder(
           borderRadius: _setOutlineBorderRadius(),
           borderSide: BorderSide(
-            color: ColorConstant.gray300,
+            color: appTheme.gray300,
             width: 1,
           ),
         );
