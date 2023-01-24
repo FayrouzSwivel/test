@@ -3,7 +3,7 @@ import 'package:employer_app/core/app_export.dart';
 
 class AppStyle {
   static TextStyle txtPoppinsSemiBold20 = TextStyle(
-    color: ColorConstant.gray900,
+    color: appTheme.myColof,
     fontSize: getFontSize(
       20,
     ),
@@ -12,7 +12,7 @@ class AppStyle {
   );
 
   static TextStyle txtPoppinsRegular15 = TextStyle(
-    color: ColorConstant.gray900,
+    color: appTheme.gray900,
     fontSize: getFontSize(
       15,
     ),
@@ -21,7 +21,7 @@ class AppStyle {
   );
 
   static TextStyle txtPoppinsMedium15 = TextStyle(
-    color: ColorConstant.gray900,
+    color: appTheme.gray900,
     fontSize: getFontSize(
       15,
     ),

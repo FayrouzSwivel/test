@@ -137,7 +137,7 @@ class CustomButton extends StatelessWidget {
   _setTextButtonShadowColor() {
     switch (variant) {
       default:
-        return ColorConstant.lightGreenA20066;
+        return appTheme.lightGreenA20066;
     }
   }
 
@@ -158,7 +158,7 @@ class CustomButton extends StatelessWidget {
     switch (fontStyle) {
       default:
         return TextStyle(
-          color: ColorConstant.black900,
+          color: appTheme.black900,
           fontSize: getFontSize(
             15,
           ),
@@ -188,8 +188,8 @@ class CustomButton extends StatelessWidget {
             0.5,
           ),
           colors: [
-            ColorConstant.yellow400,
-            ColorConstant.lightGreenA200,
+            appTheme.yellow400,
+            appTheme.lightGreenA200,
           ],
         );
     }
@@ -200,7 +200,7 @@ class CustomButton extends StatelessWidget {
       default:
         return [
           BoxShadow(
-            color: ColorConstant.lightGreenA20066,
+            color: appTheme.lightGreenA20066,
             spreadRadius: getHorizontalSize(
               2.00,
             ),

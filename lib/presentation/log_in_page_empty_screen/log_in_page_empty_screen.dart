@@ -14,7 +14,7 @@ class LogInPageEmptyScreen extends GetWidget<LogInPageEmptyController> {
     return SafeArea(
         child: Scaffold(
             resizeToAvoidBottomInset: false,
-            backgroundColor: ColorConstant.whiteA700,
+            backgroundColor: appTheme.whiteA700,
             body: Form(
                 key: _formKey,
                 child: Container(
@@ -76,7 +76,8 @@ class LogInPageEmptyScreen extends GetWidget<LogInPageEmptyController> {
                           CustomButton(
                               width: 343,
                               text: "lbl_log_in".tr,
-                              margin: getMargin(top: 40)),
+                              margin: getMargin(top: 40),
+                              onTap: welcome_toast),
                           Align(
                               alignment: Alignment.center,
                               child: Padding(
@@ -124,5 +125,12 @@ class LogInPageEmptyScreen extends GetWidget<LogInPageEmptyController> {
 
   welome_toast() {
     Get.rawSnackbar(message: "Hello there!");
+  }
+
+  welcome_toast() {
+    Get.defaultDialog(
+        onConfirm: () => Get.back(),
+        title: "Welcome",
+        middleText: "Hello there!");
   }
 }
