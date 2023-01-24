@@ -36,7 +36,7 @@ class ThemeHelper {
 class PrimaryTheme {
   Color get gray600 => fromHex("#666a74");
   Color get yellow400 => fromHex("#e9f354");
-  Color get myColof => fromHex("#ffff0808");
+  Color get myColof => fromHex("#FF27ff08");
   Color get black900 => fromHex("#000201");
   Color get lightGreenA20066 => fromHex("#66c1f865");
   Color get gray900 => fromHex("#272020");
@@ -48,7 +48,7 @@ class PrimaryTheme {
 class SecondaryTheme extends PrimaryTheme {
   Color get gray600 => fromHex("#666a74");
   Color get yellow400 => fromHex("#e9f354");
-  Color get myColof => fromHex("#ffde18f7");
+  Color get myColof => fromHex("#FF071ea1");
   Color get black900 => fromHex("#000201");
   Color get lightGreenA20066 => fromHex("#66c1f865");
   Color get gray900 => fromHex("#272020");
